@@ -1,0 +1,4 @@
+repositories:
+  - type: git
+    url: "https://github.com/yourusername/your-repository.git"
+    path: workflows/  # Path to the folder containing your workflow YAML files

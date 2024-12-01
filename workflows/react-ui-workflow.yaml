@@ -1,0 +1,17 @@
+id: trigger-react-ui
+namespace: io.kestra.examples
+description: Trigger React UI interaction
+tasks:
+  - id: open-ui
+    type: io.kestra.plugin.core.log.Log
+    message: "Triggering UI interaction with the React App"  # Use message property for log output
+    logLevel: INFO  # Optional, define log level as needed (e.g., INFO, DEBUG, ERROR)
+---
+id: embedded-ui
+namespace: io.kestra.custom
+description: Embeds the React UI in Kestra
+tasks:
+  - id: load-react-ui
+    type: io.kestra.plugin.core.log.Log
+    message: |
+      <iframe src="https://your-react-app.example.com" width="100%" height="600px"></iframe>
